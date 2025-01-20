@@ -129,7 +129,7 @@ func normalizeTrailingParts(s string) string {
 	)
 }
 
-func normalize(s string) string {
+func Normalize(s string) string {
 	return stringsutil.NormalizeWithOptions(s,
 		stringsutil.NormalizeOptions{
 			StripComments: true,

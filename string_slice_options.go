@@ -37,7 +37,7 @@ var FileCommaSeparatedStringSliceOptions = Options{
 // Example: -flag /value/1 -flag 'value2' => {"/value/1", "value2"}
 var NormalizedOriginalStringSliceOptions = Options{
 	IsEmpty:   isEmpty,
-	Normalize: normalize,
+	Normalize: Normalize,
 }
 
 // FileNormalizedStringSliceOptions represents a list of path items
@@ -74,6 +74,6 @@ var NormalizedStringSliceOptions = Options{
 // Normalization: Standard
 var FileNormalizedOriginalStringSliceOptions = Options{
 	IsEmpty:    isEmpty,
-	Normalize:  normalize,
+	Normalize:  Normalize,
 	IsFromFile: isFromFile,
 }
